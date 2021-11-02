@@ -1,0 +1,136 @@
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    box-sizing:border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+:root{
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    --raing: orange;
+ }
+ body,
+ main,
+ section {
+     width: 100%;
+     height: 100%;
+
+ }
+ header,footer {
+     display: flex;
+     position:fixed;
+     left:0;
+     right:0;
+     min-height: 5rem;
+     background-color: var(--secondary-color);
+     align-items: center;
+     z-index: 10;
+ }
+ header{
+     top: 0;
+     justify-content: flex-end;
+     
+ }
+ 
+ input{
+     min-height: 3rem;
+     border:1px solid gray;
+     border-radius: 2rem;
+     padding: 0px 1rem ;
+    margin-right:1rem;
+ }
+section{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:7rem 0px 5rem ;
+    padding: 0px 10rem;
+}
+.card {
+    cursor: pointer;
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    border-radius: 0.2rem;
+    box-shadow: 0 3px 6px rgba(26, 25, 25, 0.205), 0 3px 6px rgba(0, 0, 0, 0.315) ;
+}
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0.25), 0 10px 10px rgba(24, 23, 23, 0.356) ;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+.movieInfo {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movieInfo .movie{
+    color: #fff;
+    font-weight: bold;
+}
+.movieInfo .rating{
+    background-color:  var(--primary-color);
+    padding: 0.5rem;
+    color: var(--raing);
+}
+ .movieOverview{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 0.5rem;
+    transform: translateY(101%);
+    transition: all 100ms ease-in;
+
+
+}
+.card:hover .movieOverview{
+    transform: translateY(0) ;
+}
+
+.movieOverview h3{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ footer{
+    justify-content: center;
+    color:#fff;
+    bottom: 0;
+
+ }
